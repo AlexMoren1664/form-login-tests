@@ -1,0 +1,24 @@
+{
+  "name": "form-login-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:all": "npx wdio run wdio.conf.js",
+    "test:positive": "cross-env TEST_TAG=@positive npx wdio run wdio.conf.js",
+    "test:negative": "cross-env TEST_TAG=@negative npx wdio run wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "ef-a",
+  "license": "ISC",
+  "description": "form-login-tests",
+  "devDependencies": {
+    "@wdio/cli": "^9.2.11",
+    "@wdio/cucumber-framework": "^9.2.8",
+    "@wdio/dot-reporter": "^9.2.2",
+    "@wdio/local-runner": "^9.2.11",
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "@wdio/spec-reporter": "^9.2.8"
+  }
+}
